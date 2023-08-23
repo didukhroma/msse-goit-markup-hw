@@ -18,7 +18,7 @@
     <!-- NORMALIZE -->
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,270 +36,299 @@
   <body>
     <!-- HEADER START -->
     <header class="header">
-      <!-- NAVIGATION -->
-      <nav class="site-nav">
-        <!-- SITE LOGO -->
-        <a class="site-logo link" href="./index.html" aria-label="site-logo">
-          Web<span class="site-logo-text">Studio</span>
-        </a>
-        <!-- Link list -->
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a
-              class="nav-list-link link"
-              href="./index.html"
-              aria-label="link to main page"
-            >
-              Studio
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a
-              class="nav-list-link link"
-              href="./portfolio.html"
-              aria-label="link to portfolio page"
-            >
-              Portfolio
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link link" href="" aria-label="link to contacts"
-              >Contacts</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- CONTACTS -->
-      <address class="contacts">
-        <ul class="contacts-list list">
-          <li class="contacts-list-item">
-            <a
-              class="contacts-list-link link"
-              href="mailto:info@devstudio.com"
-              aria-label="email to webstudio team"
-            >
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-list-item">
-            <a
-              class="contacts-list-link link"
-              href="tel:+110001111111"
-              aria-label="call to webstudio team"
-            >
-              +11 (000) 111-11-11
-            </a>
-          </li>
-        </ul>
-      </address>
+      <div class="container centered">
+        <!-- NAVIGATION -->
+        <nav class="site-nav centered">
+          <!-- SITE LOGO -->
+          <a class="site-logo link" href="./index.html" aria-label="site-logo">
+            Web<span class="site-logo--light">Studio</span>
+          </a>
+          <!-- Link list -->
+          <ul class="nav-list centered list">
+            <li class="nav-list-item">
+              <a
+                class="nav-list-link link"
+                href="./index.html"
+                aria-label="link to main page"
+              >
+                Studio
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a
+                class="nav-list-link link"
+                href="./portfolio.html"
+                aria-label="link to portfolio page"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a
+                class="nav-list-link link"
+                href=""
+                aria-label="link to contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- CONTACTS -->
+        <address class="contacts">
+          <ul class="contacts-list centered list">
+            <li class="contacts-list-item">
+              <a
+                class="contacts-list-link link"
+                href="mailto:info@devstudio.com"
+                aria-label="email to webstudio team"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-list-item">
+              <a
+                class="contacts-list-link link"
+                href="tel:+110001111111"
+                aria-label="call to webstudio team"
+              >
+                +11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- HEADER END -->
     <!-- ------------------------------------------------------------------------------ -->
     <!-- MAIN START -->
     <main>
       <!-- PROJECT SECTION START -->
-      <section class="projects">
-        <h1 class="title">Portfolio page</h1>
-        <!-- FILTERS LIST-->
-        <ul class="filters-list list">
-          <li class="filters-list-item">
-            <button
-              class="filters-button button"
-              type="button"
-              aria-label="all filter"
-            >
-              All
-            </button>
-          </li>
-          <li class="filters-list-item">
-            <button
-              class="filters-button button"
-              type="button"
-              aria-label="website filter"
-            >
-              Web Site
-            </button>
-          </li>
-          <li class="filters-list-item">
-            <button
-              class="filters-button button"
-              type="button"
-              aria-label="app filter"
-            >
-              App
-            </button>
-          </li>
-          <li class="filters-list-item">
-            <button
-              class="filters-button button"
-              type="button"
-              aria-label="design filter"
-            >
-              Design
-            </button>
-          </li>
-          <li class="filters-list-item">
-            <button
-              class="filters-button button"
-              type="button"
-              aria-label="marketing filter"
-            >
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <!-- PROJECT LIST-->
-        <ul class="projects-list list">
-          <!-- PROJECT 1 -->
-          <li>
-            <a class="project-list-link link" href="#" aria-label="banking app">
-              <img
-                src="./images/portfolio/img_1.jpg"
-                alt="template banking app"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Banking App Interface Concept</h2>
-              <p class="projects-list-description">App</p>
-            </a>
-          </li>
-          <!-- PROJECT 2 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="cashless payment app"
-            >
-              <img
-                src="./images/portfolio/img_2.jpg"
-                alt="phone scanning qr-code for pay"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Cashless Payment</h2>
-              <p class="projects-list-description">Marketing</p>
-            </a>
-          </li>
-          <!-- PROJECT 3 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="meditation app"
-            >
-              <img
-                src="./images/portfolio/img_3.jpg"
-                alt="template meditation app"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Meditation App</h2>
-              <p class="projects-list-description">App</p>
-            </a>
-          </li>
-          <!-- PROJECT 4 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="marketing taxi"
-            >
-              <img
-                src="./images/portfolio/img_4.jpg"
-                alt="cab driver in car"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Taxi Service</h2>
-              <p class="projects-list-description">Marketing</p>
-            </a>
-          </li>
-          <!-- PROJECT 5 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="wallpapers app"
-            >
-              <img
-                src="./images/portfolio/img_5.jpg"
-                alt="wallpapers for phones"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Screen Illustrations</h2>
-              <p class="projects-list-description">Design</p>
-            </a>
-          </li>
-          <!-- PROJECT 6 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="marketing online courses"
-            >
-              <img
-                src="./images/portfolio/img_6.jpg"
-                alt="smiling young woman"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Online Courses</h2>
-              <p class="projects-list-description">Marketing</p>
-            </a>
-          </li>
-          <!-- PROJECT 7 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="design stories for instagram"
-            >
-              <img
-                src="./images/portfolio/img_7.jpg"
-                alt="template stories for instagram"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Instagram Stories Concept</h2>
-              <p class="projects-list-description">Design</p>
-            </a>
-          </li>
-          <!-- PROJECT 8 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="organic food web site"
-            >
-              <img
-                src="./images/portfolio/img_8.jpg"
-                alt="women with full bag of organic food "
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Organic Food</h2>
-              <p class="projects-list-description">Web Site</p>
-            </a>
-          </li>
-          <!-- PROJECT 9 -->
-          <li>
-            <a
-              class="project-list-link link"
-              href="#"
-              aria-label="fresh coffee web site"
-            >
-              <img
-                src="./images/portfolio/img_9.jpg"
-                alt="making cappuccino"
-                width="360"
-                height="300"
-              />
-              <h2 class="subtitle">Fresh Coffee</h2>
-              <p class="projects-list-description">Web Site</p>
-            </a>
-          </li>
-        </ul>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Portfolio page</h1>
+          <!-- FILTERS LIST-->
+          <ul class="filters-list list">
+            <li class="filters-list-item">
+              <button
+                class="filters-button button"
+                type="button"
+                aria-label="all filter"
+              >
+                All
+              </button>
+            </li>
+            <li class="filters-list-item">
+              <button
+                class="filters-button button"
+                type="button"
+                aria-label="website filter"
+              >
+                Web Site
+              </button>
+            </li>
+            <li class="filters-list-item">
+              <button
+                class="filters-button button"
+                type="button"
+                aria-label="app filter"
+              >
+                App
+              </button>
+            </li>
+            <li class="filters-list-item">
+              <button
+                class="filters-button button"
+                type="button"
+                aria-label="design filter"
+              >
+                Design
+              </button>
+            </li>
+            <li class="filters-list-item">
+              <button
+                class="filters-button button"
+                type="button"
+                aria-label="marketing filter"
+              >
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <!-- PROJECT LIST-->
+          <ul class="projects-list list">
+            <!-- PROJECT 1 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="banking app"
+              >
+                <img
+                  src="./images/portfolio/img_1.jpg"
+                  alt="template banking app"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Banking App Interface Concept</h2>
+                  <p class="projects-list-description">App</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 2 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="cashless payment app"
+              >
+                <img
+                  src="./images/portfolio/img_2.jpg"
+                  alt="phone scanning qr-code for pay"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Cashless Payment</h2>
+                  <p class="projects-list-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 3 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="meditation app"
+              >
+                <img
+                  src="./images/portfolio/img_3.jpg"
+                  alt="template meditation app"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Meditation App</h2>
+                  <p class="projects-list-description">App</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 4 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="marketing taxi"
+              >
+                <img
+                  src="./images/portfolio/img_4.jpg"
+                  alt="cab driver in car"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Taxi Service</h2>
+                  <p class="projects-list-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 5 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="wallpapers app"
+              >
+                <img
+                  src="./images/portfolio/img_5.jpg"
+                  alt="wallpapers for phones"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Screen Illustrations</h2>
+                  <p class="projects-list-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 6 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="marketing online courses"
+              >
+                <img
+                  src="./images/portfolio/img_6.jpg"
+                  alt="smiling young woman"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Online Courses</h2>
+                  <p class="projects-list-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 7 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="design stories for instagram"
+              >
+                <img
+                  src="./images/portfolio/img_7.jpg"
+                  alt="template stories for instagram"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Instagram Stories Concept</h2>
+                  <p class="projects-list-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 8 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="organic food web site"
+              >
+                <img
+                  src="./images/portfolio/img_8.jpg"
+                  alt="women with full bag of organic food "
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Organic Food</h2>
+                  <p class="projects-list-description">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <!-- PROJECT 9 -->
+            <li class="projects-list-item">
+              <a
+                class="project-list-link link"
+                href="#"
+                aria-label="fresh coffee web site"
+              >
+                <img
+                  src="./images/portfolio/img_9.jpg"
+                  alt="making cappuccino"
+                  width="360"
+                  height="300"
+                />
+                <div class="projects-list-wrapper">
+                  <h2 class="subtitle">Fresh Coffee</h2>
+                  <p class="projects-list-description">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- PROJECT SECTION END -->
       <!-- ------------------------------------------------------------------------------ -->
@@ -308,13 +337,15 @@
     <!-- ------------------------------------------------------------------------------ -->
     <!-- FOOTER START -->
     <footer class="footer">
-      <a class="footer-logo link" href="./index.html">
-        Web<span class="footer-logo-text">Studio</span>
-      </a>
-      <p class="footer-description">
-        Increase the flow of customers and sales for your business with digital
-        marketing &amp; growth solutions.
-      </p>
+      <div class="container">
+        <a class="site-logo link" href="./index.html">
+          Web<span class="site-logo--dark">Studio</span>
+        </a>
+        <p class="footer-description">
+          Increase the flow of customers and sales for your business with
+          digital marketing &amp; growth solutions.
+        </p>
+      </div>
     </footer>
     <!-- FOOTER END -->
     <!-- ------------------------------------------------------------------------------ -->
