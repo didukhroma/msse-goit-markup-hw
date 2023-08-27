@@ -29,6 +29,10 @@
   --container-padding: 15px;
   /* list-gap */
   --list-gap: 24px;
+  /* card-set */
+  --indent-row: 24px;
+  --indent-column: 24px;
+  --items: 4;
 }
 /**
   |============================
@@ -56,6 +60,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; */
 }
 /* ------------------------------------------------------------------------------------------------- */
 /*VISUALLY HIDDEN*/
@@ -85,6 +94,18 @@ body {
   max-width: var(--desktop-width);
   margin: 0 auto;
   padding: 0 var(--container-padding);
+}
+/* CARD SET */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--indent-row);
+  column-gap: var(--indent-column);
+}
+.card-set-item {
+  flex-basis: calc(
+    (100% - var(--indent-column) * (var(--items) - 1)) / var(--items)
+  );
 }
 /* SECTION */
 .section {
@@ -204,11 +225,11 @@ h3 {
   font-style: normal;
   color: var(--text-color);
 }
-.contacts-list-item:first-child {
+.contacts-list-item:not(:last-child) {
   margin-right: 40px;
 }
-.contacts-list-item:first-child:hover,
-.contacts-list-link[href='mailto:info@devstudio.com']:focus {
+.contacts-list-item:not(:last-child):hover,
+.contacts-list-link:not(:last-child):focus {
   color: var(--pressed-state-color);
 }
 
@@ -252,60 +273,30 @@ h3 {
 /* ------------------------------------------------------------------------------------------------- */
 /* FEATURES */
 
-.features-list {
-  display: flex;
-  gap: 24px;
-}
-.features-list-item {
-  flex-basis: calc(
-    (var(--desktop-width) - 2 * var(--container-padding) - 3 * var(--list-gap)) /
-      4
-  );
-}
-/* .features-list-item */
-
 /* ------------------------------------------------------------------------------------------------- */
 /* SERVICES */
 .services {
   padding-top: 0;
 }
 
-.services .title {
+.services-title {
   margin-bottom: 72px;
 }
 .services-list {
-  display: flex;
-  gap: 24px;
+  --items: 3;
 }
-.services-list-item {
-  flex-basis: calc(
-    (var(--desktop-width) - 2 * var(--container-padding) - 2 * var(--list-gap)) /
-      3
-  );
-}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* TEAM */
 .team {
   background-color: var(--light-color);
   text-align: center;
 }
-.team .title {
+
+.team-title {
   margin-bottom: 72px;
 }
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-.team-list-item {
-  flex-basis: calc(
-    (var(--desktop-width) - 2 * var(--container-padding) - 3 * var(--list-gap)) /
-      4
-  );
-  background-color: var(--white-color);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
-    0px 1px 6px 0px #2e2f4214;
-}
+
 .team-list-wrapper {
   padding: 32px 0;
 }
@@ -375,16 +366,8 @@ h3 {
 /* ------------------------------------------------------------------------------------------------- */
 /* PROJECTS */
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: calc(var(--list-gap) * 2);
-  column-gap: var(--list-gap);
-}
-.projects-list-item {
-  flex-basis: calc(
-    (var(--desktop-width) - 2 * var(--container-padding) - 2 * var(--list-gap)) /
-      3
-  );
+  --items: 3;
+  --indent-row: 48px;
 }
 
 .projects-list-description {
