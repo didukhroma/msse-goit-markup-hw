@@ -20,9 +20,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,14 +41,18 @@
         <!-- NAVIGATION -->
         <nav class="site-nav centered">
           <!-- SITE LOGO -->
-          <a class="site-logo link" href="./index.html" aria-label="site-logo">
+          <a
+            class="site-logo site-nav-logo link"
+            href="./index.html"
+            aria-label="site-logo"
+          >
             Web<span class="site-logo--light">Studio</span>
           </a>
           <!-- Link list -->
           <ul class="nav-list centered list">
             <li class="nav-list-item">
               <a
-                class="nav-list-link link"
+                class="nav-list-link current link"
                 href="./index.html"
                 aria-label="link to main page"
               >
@@ -113,7 +114,7 @@
             Effective solutions <span class="hero-title-word">for</span> your
             business
           </h1>
-          <button class="hero-button button" type="button">
+          <button class="hero-button button" type="button" data-modal-open>
             Order service
           </button>
         </div>
@@ -126,6 +127,11 @@
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list card-set list">
             <li class="features-list-item card-set-item">
+              <div class="features-list-wrapper centered">
+                <svg class="features-list-icon" width="64" height="64">
+                  <use href="./images/icons.svg#antenna-icon"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Strategy</h3>
               <p class="features-list-description">
                 Our goal is to identify the business problem to walk away with
@@ -133,6 +139,11 @@
               </p>
             </li>
             <li class="features-list-item card-set-item">
+              <div class="features-list-wrapper centered">
+                <svg class="features-list-icon" width="64" height="64">
+                  <use href="./images/icons.svg#clock-icon"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Punctuality</h3>
               <p class="features-list-description">
                 Bring the key message to the brand's audience for the best price
@@ -140,6 +151,11 @@
               </p>
             </li>
             <li class="features-list-item card-set-item">
+              <div class="features-list-wrapper centered">
+                <svg class="features-list-icon" width="64" height="64">
+                  <use href="./images/icons.svg#diagram-icon"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Diligence</h3>
               <p class="features-list-description">
                 Research and confirm brands that present the strongest digital
@@ -147,6 +163,11 @@
               </p>
             </li>
             <li class="features-list-item card-set-item">
+              <div class="features-list-wrapper centered">
+                <svg class="features-list-icon" width="64" height="64">
+                  <use href="./images/icons.svg#astronaut-icon"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Technologies</h3>
               <p class="features-list-description">
                 Design practice focused on digital experiences. We bring forth a
@@ -163,7 +184,7 @@
         <div class="container">
           <h2 class="services-title title">What are we doing</h2>
           <ul class="services-list card-set list">
-            <li class="services-list-item cardset-item">
+            <li class="services-list-item card-set-item">
               <img
                 src="./images/services/service_1.jpg"
                 alt="desktop application"
@@ -171,7 +192,7 @@
                 height="300"
               />
             </li>
-            <li class="services-list-item cardset-item">
+            <li class="services-list-item card-set-item">
               <img
                 src="./images/services/service_2.jpg"
                 alt="mobile application"
@@ -179,7 +200,7 @@
                 height="300"
               />
             </li>
-            <li class="services-list-item cardset-item">
+            <li class="services-list-item card-set-item">
               <img
                 src="./images/services/service_3.jpg"
                 alt="responsive application"
@@ -196,7 +217,9 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title title">Our team</h2>
+          <!-- TEAM LIST -->
           <ul class="team-list card-set list">
+            <!-- FIRST MEMBER -->
             <li class="team-list-item card-set-item">
               <img
                 src="./images/team/team_card_1.jpg"
@@ -207,8 +230,68 @@
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="team-list-description">Product designer</p>
+                <!-- SOCIALS LINKS -->
+                <ul class="social-list card-set list">
+                  <!-- INSTAGRAM -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- TWITTER -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- FACEBOOK -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- LINKEDIN -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
+            <!-- SECOND MEMBER -->
             <li class="team-list-item card-set-item">
               <img
                 src="./images/team/team_card_2.jpg"
@@ -219,8 +302,68 @@
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Tom Ford</h3>
                 <p class="team-list-description">Frontend developer</p>
+                <!-- SOCIALS LINKS -->
+                <ul class="social-list card-set list">
+                  <!-- INSTAGRAM -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- TWITTER -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- FACEBOOK -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- LINKEDIN -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
+            <!-- THIRD MEMBER -->
             <li class="team-list-item card-set-item">
               <img
                 src="./images/team/team_card_3.jpg"
@@ -232,8 +375,68 @@
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Camila Garcia</h3>
                 <p class="team-list-description">Marketing</p>
+                <!-- SOCIALS LINKS -->
+                <ul class="social-list card-set list">
+                  <!-- INSTAGRAM -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- TWITTER -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- FACEBOOK -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- LINKEDIN -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
+            <!-- FOURTH MEMBER -->
             <li class="team-list-item card-set-item">
               <img
                 src="./images/team/team_card_4.jpg"
@@ -244,29 +447,254 @@
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Daniel Wilson</h3>
                 <p class="team-list-description">UI designer</p>
+                <!-- SOCIALS LINKS -->
+                <ul class="social-list card-set list">
+                  <!-- INSTAGRAM -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- TWITTER -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- FACEBOOK -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- LINKEDIN -->
+                  <li class="social-list-item card-set-item">
+                    <a
+                      class="social-list-link centered link"
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin link"
+                    >
+                      <svg class="social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- TEAM SECTION END -->
+      <!-- ------------------------------------------------------------------------------ -->
+      <!-- CUSTOMERS SECTION START -->
+      <section class="section">
+        <div class="container">
+          <h2 class="customers-title title">Customers</h2>
+          <ul class="customers-list card-set list">
+            <!-- CLIENT ONE -->
+            <li class="customers-item card-set-item">
+              <a
+                class="customers-link centered link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="first client link"
+                ><svg class="customers-icon" width="104" height="56">
+                  <use href="./images/icons.svg#client-1-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- CLIENT TWO -->
+            <li class="customers-item card-set-item">
+              <a
+                class="customers-link centered link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="first client link"
+                ><svg class="customers-icon" width="104" height="56">
+                  <use href="./images/icons.svg#client-2-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- CLIENT THREE -->
+            <li class="customers-item card-set-item">
+              <a
+                class="customers-link centered link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="first client link"
+                ><svg class="customers-icon" width="104" height="56">
+                  <use href="./images/icons.svg#client-3-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- CLIENT FOUR -->
+            <li class="customers-item card-set-item">
+              <a
+                class="customers-link centered link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="first client link"
+                ><svg class="customers-icon" width="104" height="56">
+                  <use href="./images/icons.svg#client-4-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- CLIENT FIVE -->
+            <li class="customers-item card-set-item">
+              <a
+                class="customers-link centered link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="first client link"
+                ><svg class="customers-icon" width="104" height="56">
+                  <use href="./images/icons.svg#client-5-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- CLIENT SIX -->
+            <li class="customers-item card-set-item">
+              <a
+                class="customers-link centered link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="first client link"
+                ><svg class="customers-icon" width="104" height="56">
+                  <use href="./images/icons.svg#client-6-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- CUSTOMERS SECTION END -->
     </main>
     <!-- MAIN END -->
     <!-- ------------------------------------------------------------------------------ -->
     <!-- FOOTER START  -->
     <footer class="footer">
-      <div class="container">
-        <a class="site-logo link" href="./index.html">
-          Web<span class="site-logo--dark">Studio</span>
-        </a>
-        <p class="footer-description">
-          Increase the flow of customers and sales for your business with
-          digital marketing &amp; growth solutions.
-        </p>
+      <div class="footer-container container">
+        <!--LOGO WRAPPER  -->
+        <div class="footer-description-wrapper">
+          <a class="footer-logo site-logo link" href="./index.html">
+            Web<span class="site-logo--dark">Studio</span>
+          </a>
+          <p class="footer-description">
+            Increase the flow of customers and sales for your business with
+            digital marketing &amp; growth solutions.
+          </p>
+        </div>
+        <!-- SOCIALS LINKS -->
+        <div class="footer-social-wrapper">
+          <p class="footer-subtitle">Social media</p>
+          <ul class="footer-social-list social-list card-set list">
+            <!-- INSTAGRAM -->
+            <li class="social-list-item card-set-item">
+              <a
+                class="social-list-link centered link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram link"
+              >
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- TWITTER -->
+            <li class="social-list-item card-set-item">
+              <a
+                class="social-list-link centered link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter link"
+              >
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- FACEBOOK -->
+            <li class="social-list-item card-set-item">
+              <a
+                class="social-list-link centered link"
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook link"
+              >
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- LINKEDIN -->
+            <li class="social-list-item card-set-item">
+              <a
+                class="social-list-link centered link"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin link"
+              >
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- FOOTER END -->
     <!-- ------------------------------------------------------------------------------ -->
+    <!-- MODAL START-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-wrapper">
+        <button class="backdrop-button centered" type="button" data-modal-close>
+          <svg class="backdrop-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-btn-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- MODAL END-->
+
+    <script src="./js//modal.js"></script>
   </body>
   <!-- BODY END -->
   <!-- ------------------------------------------------------------------------------ -->
