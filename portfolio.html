@@ -37,69 +37,153 @@
     <!-- HEADER START -->
     <header class="header">
       <div class="container centered">
-        <!-- NAVIGATION -->
-        <nav class="site-nav centered">
-          <!-- SITE LOGO -->
-          <a
-            class="site-logo site-nav-logo link"
-            href="./index.html"
-            aria-label="site-logo"
-          >
-            Web<span class="site-logo--light">Studio</span>
-          </a>
-          <!-- Link list -->
-          <ul class="nav-list centered list">
-            <li class="nav-list-item">
-              <a
-                class="nav-list-link link"
-                href="./index.html"
-                aria-label="link to main page"
-              >
-                Studio
-              </a>
-            </li>
-            <li class="nav-list-item">
-              <a
-                class="nav-list-link current link"
-                href="./portfolio.html"
-                aria-label="link to portfolio page"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li class="nav-list-item">
-              <a
-                class="nav-list-link link"
-                href=""
-                aria-label="link to contacts"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- CONTACTS -->
-        <address class="contacts">
-          <ul class="contacts-list centered list">
-            <li class="contacts-list-item">
-              <a
-                class="contacts-list-link link"
-                href="mailto:info@devstudio.com"
-                aria-label="email to webstudio team"
-              >
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-list-item">
-              <a
-                class="contacts-list-link link"
-                href="tel:+110001111111"
-                aria-label="call to webstudio team"
-              >
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
+        <!-- SITE LOGO -->
+        <a
+          class="site-logo site-nav-logo link"
+          href="./index.html"
+          aria-label="site-logo"
+        >
+          Web<span class="site-logo--light">Studio</span>
+        </a>
+        <!-- MENU BUTTON -->
+        <button
+          class="menu__button centered js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <!-- OPEN MENU -->
+          <svg class="menu__icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+        <div class="menu__overlay js-menu-container">
+          <div class="menu__wrapper">
+            <!-- CLOSE MENU -->
+            <button
+              class="menu__wrapper-button backdrop-button centered js-close-menu"
+              type="button"
+            >
+              <svg class="backdrop-icon" width="8" height="8">
+                <use href="./images/icons.svg#close-btn-icon"></use>
+              </svg>
+            </button>
+            <!-- NAVIGATION -->
+            <nav class="site-nav">
+              <!-- Link list -->
+              <ul class="nav-list list">
+                <li class="nav-list-item">
+                  <a
+                    class="nav-list-link link"
+                    href="./index.html"
+                    aria-label="link to main page"
+                  >
+                    Studio
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a
+                    class="nav-list-link current link"
+                    href="./portfolio.html"
+                    aria-label="link to portfolio page"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a
+                    class="nav-list-link link"
+                    href=""
+                    aria-label="link to contacts"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- CONTACTS -->
+            <address class="contacts">
+              <ul class="contacts-list list">
+                <li class="contacts-list-item">
+                  <a
+                    class="contacts-list-link link"
+                    href="tel:+110001111111"
+                    aria-label="call to webstudio team"
+                  >
+                    +11 (000) 111-11-11
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a
+                    class="contacts-list-link link"
+                    href="mailto:info@devstudio.com"
+                    aria-label="email to webstudio team"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <!-- SOCIALS LINKS -->
+            <ul class="header__socials social-list list centered">
+              <!-- INSTAGRAM -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <!-- TWITTER -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <!-- FACEBOOK -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <!-- LINKEDIN -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- HEADER END -->
@@ -159,21 +243,45 @@
             </li>
           </ul>
           <!-- PROJECT LIST-->
-          <ul class="projects-list card-set list">
+          <ul class="projects-list list">
             <!-- PROJECT 1 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="banking app"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_1.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_1_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_1_desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_1_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_1_tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/portfolio/mobile/project_1_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_1_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/project_1_mobile.jpg"
+                      alt="template banking app"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -187,19 +295,44 @@
               </a>
             </li>
             <!-- PROJECT 2 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="cashless payment app"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_2.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_2_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_2_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_2_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_2_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_2_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_2_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_2_mobile.jpg"
+                      alt="paying with qr code"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -213,19 +346,44 @@
               </a>
             </li>
             <!-- PROJECT 3 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="meditation app"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_3.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_3_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_3_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_3_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_3_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_3_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_3_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_3_mobile.jpg"
+                      alt="adaptive design of app"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -239,19 +397,44 @@
               </a>
             </li>
             <!-- PROJECT 4 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="marketing taxi"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_4.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_4_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_4_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_4_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_4_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_4_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_4_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_4_mobile.jpg"
+                      alt="driver in car"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -265,19 +448,44 @@
               </a>
             </li>
             <!-- PROJECT 5 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="wallpapers app"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_5.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_5_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_5_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_5_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_5_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_5_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_5_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_5_mobile.jpg"
+                      alt="wallpapers with moon"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -291,19 +499,44 @@
               </a>
             </li>
             <!-- PROJECT 6 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="marketing online courses"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_6.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_6_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_6_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_6_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_6_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_6_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_6_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_6_mobile.jpg"
+                      alt="woman listening course"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -317,19 +550,44 @@
               </a>
             </li>
             <!-- PROJECT 7 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="design stories for instagram"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_7.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_7_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_7_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_7_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_7_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_7_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_7_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_7_mobile.jpg"
+                      alt="woman with food in bag"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -343,19 +601,44 @@
               </a>
             </li>
             <!-- PROJECT 8 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="organic food web site"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_8.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_8_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_8_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_8_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_8_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_8_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_8_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_8_mobile.jpg"
+                      alt="woman with food in bag"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -369,19 +652,44 @@
               </a>
             </li>
             <!-- PROJECT 9 -->
-            <li class="projects-list-item card-set-item">
+            <li class="projects-list-item">
               <a
                 class="projects-list-link link"
                 href="#"
                 aria-label="fresh coffee web site"
               >
                 <div class="projects-picture-wrapper">
-                  <img
-                    src="./images/portfolio/img_9.jpg"
-                    alt="template banking app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/project_9_desktop.jpg    1x,
+                        ./images/portfolio/desktop/project_9_desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/project_9_tablet.jpg    1x,
+                        ./images/portfolio/tablet/project_9_tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project_9_mobile.jpg    1x,
+                        ./images/portfolio/mobile/project_9_mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/project_9_mobile.jpg"
+                      alt="making cappucchino"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="projects-picture-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -483,7 +791,7 @@
           <p class="footer-subtitle">Subscribe</p>
           <form
             method="GET"
-            class="subscribe-form centered"
+            class="subscribe-form"
             name="form-subscribe"
             autocomplete="off"
             novalidate
@@ -513,6 +821,7 @@
     </footer>
     <!-- FOOTER END -->
     <!-- ------------------------------------------------------------------------------ -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
   <!-- BODY END -->
   <!-- ------------------------------------------------------------------------------ -->
