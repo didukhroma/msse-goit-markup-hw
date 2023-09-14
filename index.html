@@ -38,69 +38,153 @@
     <!-- HEADER START -->
     <header class="header">
       <div class="container centered">
-        <!-- NAVIGATION -->
-        <nav class="site-nav centered">
-          <!-- SITE LOGO -->
-          <a
-            class="site-logo site-nav-logo link"
-            href="./index.html"
-            aria-label="site-logo"
-          >
-            Web<span class="site-logo--light">Studio</span>
-          </a>
-          <!-- Link list -->
-          <ul class="nav-list centered list">
-            <li class="nav-list-item">
-              <a
-                class="nav-list-link current link"
-                href="./index.html"
-                aria-label="link to main page"
-              >
-                Studio
-              </a>
-            </li>
-            <li class="nav-list-item">
-              <a
-                class="nav-list-link link"
-                href="./portfolio.html"
-                aria-label="link to portfolio page"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li class="nav-list-item">
-              <a
-                class="nav-list-link link"
-                href=""
-                aria-label="link to contacts"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- CONTACTS -->
-        <address class="contacts">
-          <ul class="contacts-list centered list">
-            <li class="contacts-list-item">
-              <a
-                class="contacts-list-link link"
-                href="mailto:info@devstudio.com"
-                aria-label="email to webstudio team"
-              >
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-list-item">
-              <a
-                class="contacts-list-link link"
-                href="tel:+110001111111"
-                aria-label="call to webstudio team"
-              >
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
+        <!-- SITE LOGO -->
+        <a
+          class="site-logo site-nav-logo link"
+          href="./index.html"
+          aria-label="site-logo"
+        >
+          Web<span class="site-logo--light">Studio</span>
+        </a>
+        <!-- MENU BUTTON -->
+        <button
+          class="menu__button centered js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <!-- OPEN MENU -->
+          <svg class="menu__icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+        <div class="menu__overlay js-menu-container">
+          <div class="menu__wrapper">
+            <!-- CLOSE MENU -->
+            <button
+              class="menu__wrapper-button backdrop-button centered js-close-menu"
+              type="button"
+            >
+              <svg class="backdrop-icon" width="8" height="8">
+                <use href="./images/icons.svg#close-btn-icon"></use>
+              </svg>
+            </button>
+            <!-- NAVIGATION -->
+            <nav class="site-nav">
+              <!-- Link list -->
+              <ul class="nav-list list">
+                <li class="nav-list-item">
+                  <a
+                    class="nav-list-link current link"
+                    href="./index.html"
+                    aria-label="link to main page"
+                  >
+                    Studio
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a
+                    class="nav-list-link link"
+                    href="./portfolio.html"
+                    aria-label="link to portfolio page"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a
+                    class="nav-list-link link"
+                    href=""
+                    aria-label="link to contacts"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- CONTACTS -->
+            <address class="contacts">
+              <ul class="contacts-list list">
+                <li class="contacts-list-item">
+                  <a
+                    class="contacts-list-link link"
+                    href="tel:+110001111111"
+                    aria-label="call to webstudio team"
+                  >
+                    +11 (000) 111-11-11
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a
+                    class="contacts-list-link link"
+                    href="mailto:info@devstudio.com"
+                    aria-label="email to webstudio team"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <!-- SOCIALS LINKS -->
+            <ul class="header__socials social-list list centered">
+              <!-- INSTAGRAM -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <!-- TWITTER -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <!-- FACEBOOK -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <!-- LINKEDIN -->
+              <li class="social-list-item">
+                <a
+                  class="social-list-link centered link"
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin link"
+                >
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- HEADER END -->
@@ -125,50 +209,50 @@
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
-          <ul class="features-list card-set list">
-            <li class="features-list-item card-set-item">
+          <ul class="features-list list">
+            <li class="features-list-item">
               <div class="features-list-wrapper centered">
                 <svg class="features-list-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna-icon"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="features-list__subtitle subtitle">Strategy</h3>
               <p class="features-list-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="features-list-item card-set-item">
+            <li class="features-list-item">
               <div class="features-list-wrapper centered">
                 <svg class="features-list-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock-icon"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="features-list__subtitle subtitle">Punctuality</h3>
               <p class="features-list-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="features-list-item card-set-item">
+            <li class="features-list-item">
               <div class="features-list-wrapper centered">
                 <svg class="features-list-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram-icon"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="features-list__subtitle subtitle">Diligence</h3>
               <p class="features-list-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="features-list-item card-set-item">
+            <li class="features-list-item">
               <div class="features-list-wrapper centered">
                 <svg class="features-list-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut-icon"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="features-list__subtitle subtitle">Technologies</h3>
               <p class="features-list-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -186,26 +270,41 @@
           <ul class="services-list card-set list">
             <li class="services-list-item card-set-item">
               <img
+                srcset="
+                  ./images/services/service_1.jpg    1x,
+                  ./images/services/service_1@2x.jpg 2x
+                "
                 src="./images/services/service_1.jpg"
                 alt="desktop application"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="services-list-item card-set-item">
               <img
+                srcset="
+                  ./images/services/service_2.jpg    1x,
+                  ./images/services/service_2@2x.jpg 2x
+                "
                 src="./images/services/service_2.jpg"
                 alt="mobile application"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="services-list-item card-set-item">
               <img
+                srcset="
+                  ./images/services/service_3.jpg    1x,
+                  ./images/services/service_3@2x.jpg 2x
+                "
                 src="./images/services/service_3.jpg"
                 alt="responsive application"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -218,14 +317,19 @@
         <div class="container">
           <h2 class="team-title title">Our team</h2>
           <!-- TEAM LIST -->
-          <ul class="team-list card-set list">
+          <ul class="team-list list">
             <!-- FIRST MEMBER -->
-            <li class="team-list-item card-set-item">
+            <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/team_card_1.jpg    1x,
+                  ./images/team/team_card_1@2x.jpg 2x
+                "
                 src="./images/team/team_card_1.jpg"
                 alt="product designer mark guerrero"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Mark Guerrero</h3>
@@ -292,12 +396,17 @@
               </div>
             </li>
             <!-- SECOND MEMBER -->
-            <li class="team-list-item card-set-item">
+            <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/team_card_2.jpg    1x,
+                  ./images/team/team_card_2@2x.jpg 2x
+                "
                 src="./images/team/team_card_2.jpg"
                 alt="frontend developer tom ford"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Tom Ford</h3>
@@ -364,12 +473,17 @@
               </div>
             </li>
             <!-- THIRD MEMBER -->
-            <li class="team-list-item card-set-item">
+            <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/team_card_3.jpg    1x,
+                  ./images/team/team_card_3@2x.jpg 2x
+                "
                 src="./images/team/team_card_3.jpg"
                 alt="marketing camila garcia"
                 width="264"
                 height="260"
+                loading="lazy"
               />
 
               <div class="team-list-wrapper">
@@ -437,12 +551,17 @@
               </div>
             </li>
             <!-- FOURTH MEMBER -->
-            <li class="team-list-item card-set-item">
+            <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team/team_card_4.jpg    1x,
+                  ./images/team/team_card_4@2x.jpg 2x
+                "
                 src="./images/team/team_card_4.jpg"
                 alt="ui designer daniel wilson"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-list-wrapper">
                 <h3 class="subtitle">Daniel Wilson</h3>
@@ -526,7 +645,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="first client link"
-                ><svg class="customers-icon" width="104" height="56">
+                ><svg class="customers-icon" width="110" height="56">
                   <use href="./images/icons.svg#client-1-icon"></use>
                 </svg>
               </a>
@@ -539,7 +658,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="first client link"
-                ><svg class="customers-icon" width="104" height="56">
+                ><svg class="customers-icon" width="110" height="56">
                   <use href="./images/icons.svg#client-2-icon"></use>
                 </svg>
               </a>
@@ -552,7 +671,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="first client link"
-                ><svg class="customers-icon" width="104" height="56">
+                ><svg class="customers-icon" width="110" height="56">
                   <use href="./images/icons.svg#client-3-icon"></use>
                 </svg>
               </a>
@@ -565,7 +684,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="first client link"
-                ><svg class="customers-icon" width="104" height="56">
+                ><svg class="customers-icon" width="110" height="56">
                   <use href="./images/icons.svg#client-4-icon"></use>
                 </svg>
               </a>
@@ -578,7 +697,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="first client link"
-                ><svg class="customers-icon" width="104" height="56">
+                ><svg class="customers-icon" width="110" height="56">
                   <use href="./images/icons.svg#client-5-icon"></use>
                 </svg>
               </a>
@@ -591,7 +710,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="first client link"
-                ><svg class="customers-icon" width="104" height="56">
+                ><svg class="customers-icon" width="110" height="56">
                   <use href="./images/icons.svg#client-6-icon"></use>
                 </svg>
               </a>
@@ -684,7 +803,7 @@
           <p class="footer-subtitle">Subscribe</p>
           <form
             method="GET"
-            class="subscribe-form centered"
+            class="subscribe-form"
             name="form-subscribe"
             autocomplete="off"
             novalidate
@@ -826,7 +945,8 @@
     </div>
     <!-- MODAL END-->
 
-    <script src="./js//modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
   <!-- BODY END -->
   <!-- ------------------------------------------------------------------------------ -->
